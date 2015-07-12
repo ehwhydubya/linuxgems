@@ -3,7 +3,7 @@
 # Best viewed in emacs org-mode.
 # Alternately, one can keep this cheat sheet handy by adding the following line to ~/.bashrc:
 #
-# alias cheatsheet="less ~/path_to_cheat_sheet.org.sh" 
+# alias cheatsheet="less ~/path_to_cheat_sheet.org.sh"
 
 
 * Reference:
@@ -293,7 +293,7 @@ nmap localhost
 ***** wget:
 
 # download a file over http:
-wget http://example.com/folder/file 
+wget http://example.com/folder/file
 
 # complete a partially downloaded file:
 wget -c http://example.com/folder/file
@@ -303,6 +303,21 @@ wget -b wget -c http://example.com/folder/file
 
 # download a file from ftp server:
 wget --ftp-user=USER --ftp-password=PASS ftp://example.com/folder/file
+
+
+***** curl:
+
+# download a file over http:
+curl http://example.com/folder/file
+
+# send extra headers in the request to the server
+curl -H "X-Custom-Header: Me" http://example.com
+
+# authenticate to the server using HTTP basic suth
+curl -u username:password http://example.com
+
+# use certificate when retrieving information from HTTPS server
+curl --cert mycert.pem https://example.com
 
 ***** netcat:
 
@@ -425,7 +440,7 @@ modprobe
 dpkg --get-selections
 
 # Print environment variables:
-printenv 
+printenv
 
 # List hardware connected via PCI ports:
 lspci

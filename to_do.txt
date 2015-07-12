@@ -9,4 +9,3 @@ anacron
 more detail about filesystems
 /etc
 daemons
-curl
